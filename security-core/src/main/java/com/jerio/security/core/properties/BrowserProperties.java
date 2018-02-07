@@ -5,6 +5,15 @@ package com.jerio.security.core.properties;
  */
 public class BrowserProperties {
     private String loginPage = "/login.html";
+    private String signUpUrl;
+
+    public String getSignUpUrl() {
+        return signUpUrl;
+    }
+
+    public void setSignUpUrl(String signUpUrl) {
+        this.signUpUrl = signUpUrl;
+    }
 
     private LoginType loginType = LoginType.JSON;
 
